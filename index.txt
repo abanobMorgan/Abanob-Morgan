@@ -1,24 +1,24 @@
-vCard - Personal Portfolio
+Abanob-Morgan
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = Abanob-Morgan
+Abanob-Morgan
+Machine Learning Engineer
 
 Show Contacts
 
 Email
-richard@example.com
+abanob.k.morgan@gmail.com
 
 Phone
-+1 (213) 352-2795
++2 (010) 2783-8329
 
 Birthday
-June 23, 1982
+June 23, 1996
 
 Location
-Sacramento, California, USA
+New Cairo, Cairo, EGYPT
 
 # navbar
 

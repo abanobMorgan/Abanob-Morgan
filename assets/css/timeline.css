@@ -1,0 +1,27 @@
+.timeline .title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.timeline .title-wrapper .h3 {
+  margin: 0;
+  text-align: left;
+}
+
+.timeline .title-wrapper .icon-box {
+  background: var(--border-gradient-onyx);
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline .title-wrapper .icon-box ion-icon {
+  font-size: 24px;
+  color: var(--orange-yellow-crayola);
+}

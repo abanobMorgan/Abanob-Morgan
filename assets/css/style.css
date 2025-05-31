@@ -3,13 +3,6 @@
 \*-----------------------------------*/
 
 
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
@@ -1500,7 +1493,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .skills-item:not(:last-child) { margin-bottom: 25px; }
 
-
+.title-wrapper data {
+  margin-left: auto;  /* This pushes the data element to the right */
+  margin-right: 10px; /* Add some space between the percentage and the icon */
+  min-width: 45px;    /* Ensure consistent width for all percentages */
+  text-align: right;  /* Align the text itself to the right */
+}
 
   /**
    * #PORTFOLIO, BLOG

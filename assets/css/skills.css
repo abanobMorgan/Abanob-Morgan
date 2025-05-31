@@ -1,0 +1,33 @@
+.sub-skills {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.sub-skill-item {
+  margin: 8px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.title-wrapper {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.expand-icon {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.expanded .expand-icon {
+  transform: rotate(180deg);
+}
+
+.data{
+   align-items: right; 
+}

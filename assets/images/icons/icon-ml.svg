@@ -1,0 +1,34 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="black" stroke-width="4">
+  <!-- Neural Network Icon -->
+  <circle cx="60" cy="60" r="40" stroke="#000" stroke-width="4" fill="#fff"/>
+  <circle cx="45" cy="45" r="6" fill="#fcd660"/>
+  <circle cx="75" cy="45" r="6" fill="#fcd660"/>
+  <circle cx="45" cy="75" r="6" fill="#fcd660"/>
+  <circle cx="75" cy="75" r="6" fill="#fcd660"/>
+  <circle cx="60" cy="60" r="6" fill="#fcd660"/>
+  <line x1="45" y1="45" x2="60" y2="60"/>
+  <line x1="75" y1="45" x2="60" y2="60"/>
+  <line x1="45" y1="75" x2="60" y2="60"/>
+  <line x1="75" y1="75" x2="60" y2="60"/>
+
+    <!-- Text Label: MACHINE LEARNING -->
+    <rect x="130" y="30" width="130" height="60" rx="10" fill="#fff" stroke="#000"/>
+    <text x="140" y="55" font-family="Arial" font-size="15" font-weight="200" stop-color="#FFDB6E">M A C H I N E</text>
+    <text x="140" y="75" font-family="Arial" font-size="15" font-weight="200" stop-color="#FFDB6E">L E A R N I N G</text>
+
+  <!-- Scatter Plot -->
+  <rect x="30" y="160" width="90" height="90" rx="10" fill="#d0ecff" stroke="#000"/>
+  <line x1="40" y1="230" x2="110" y2="230"/>
+  <line x1="40" y1="170" x2="40" y2="230"/>
+  <line x1="40" y1="230" x2="110" y2="170" stroke-width="2"/>
+  <circle cx="50" cy="225" r="3" fill="#000"/>
+  <circle cx="60" cy="215" r="3" fill="#000"/>
+  <circle cx="70" cy="210" r="3" fill="#000"/>
+  <circle cx="85" cy="195" r="3" fill="#000"/>
+  <circle cx="100" cy="180" r="3" fill="#000"/>
+
+  <!-- Brain Icon -->
+  <circle cx="220" cy="210" r="40" stroke="#000" fill="#fff"/>
+  <path d="M200 200 Q200 185 215 185 Q230 185 230 200 Q230 215 215 215 Q200 215 200 200 Z" fill="#fcd660" stroke="#000"/>
+  <path d="M240 200 Q240 185 255 185 Q270 185 270 200 Q270 215 255 215 Q240 215 240 200 Z" fill="#fcd660" stroke="#000"/>
+</svg>

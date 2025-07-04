@@ -11,6 +11,47 @@
   display: none;
 }
 
+.avatar-box img {
+  border-radius: 50%;
+  object-fit: cover;
+  /* Optional: add a border for better appearance */
+  border: 2px solid #e0e0e0;
+}
+.experience-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 8px 0;
+  gap: 10px;
+}
+
+.experience-header .timeline-item-title {
+  margin: 0;
+  flex: 1;
+
+}
+
+.experience-header .expand-icon {
+  margin-left: 12px;
+  transition: transform 0.3s;
+}
+
+.experience-header .expand-icon.expanded {
+  transform: rotate(180deg);
+}
+.experience-header span {
+  margin-left: auto;
+  min-width: 170px; /* adjust as needed */
+  text-align: right;
+  color: var(--vegas-gold); /* optional: style the date */
+  font-size: var(--fs-6);   /* optional: match your design */
+}
+.experience-details {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
 .title-wrapper {
   cursor: pointer;
   display: flex;

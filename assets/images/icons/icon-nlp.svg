@@ -1,0 +1,43 @@
+<svg width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background rectangle for style consistency -->
+  <rect x="1" y="1" width="38" height="30" rx="2" fill="url(#bg_linear)" opacity="0.15"/>
+  <rect x="0.75" y="0.75" width="38.5" height="30.5" rx="2.25" stroke="url(#bg_stroke)" stroke-width="1.5" fill="none"/>
+  <!-- Person icon -->
+  <circle cx="11" cy="24" r="2" stroke="url(#person_linear)" stroke-width="2" fill="none"/>
+  <rect x="8.5" y="26" width="5" height="3" rx="1.5" stroke="url(#person_linear)" stroke-width="2" fill="none"/>
+  <!-- NLP text -->
+  <text x="16" y="27.5" font-family="Arial, Helvetica, sans-serif" font-size="5" fill="url(#person_linear)" font-weight="bold">NLP</text>
+  <!-- Speech bubble -->
+  <rect x="5" y="7" width="13" height="8" rx="2.5" stroke="url(#bubble_linear)" stroke-width="2" fill="none"/>
+  <polygon points="12,15 14,19 16,15" fill="none" stroke="url(#bubble_linear)" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Circuit lines -->
+  <line x1="18" y1="10" x2="25" y2="10" stroke="url(#circuit_linear)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="18" y1="13" x2="25" y2="13" stroke="url(#circuit_linear)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="18" y1="16" x2="25" y2="16" stroke="url(#circuit_linear)" stroke-width="2" stroke-linecap="round"/>
+  <!-- Circuit nodes -->
+  <circle cx="27" cy="10" r="1.5" fill="url(#circuit_linear)"/>
+  <circle cx="27" cy="13" r="1.5" fill="url(#circuit_linear)"/>
+  <circle cx="27" cy="16" r="1.5" fill="url(#circuit_linear)"/>
+  <defs>
+    <linearGradient id="bg_linear" x1="3" y1="1" x2="26" y2="31" gradientUnits="userSpaceOnUse">
+      <stop offset="0.259" stop-color="#FFDB6E"/>
+      <stop offset="1" stop-color="#FFBC5E"/>
+    </linearGradient>
+    <linearGradient id="bg_stroke" x1="2" y1="0" x2="28" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0.259" stop-color="#FFDB6E"/>
+      <stop offset="1" stop-color="#FFBC5E"/>
+    </linearGradient>
+    <linearGradient id="person_linear" x1="8" y1="22" x2="18" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0.259" stop-color="#FFDB6E"/>
+      <stop offset="1" stop-color="#FFBC5E"/>
+    </linearGradient>
+    <linearGradient id="bubble_linear" x1="5" y1="7" x2="18" y2="19" gradientUnits="userSpaceOnUse">
+      <stop offset="0.259" stop-color="#FFDB6E"/>
+      <stop offset="1" stop-color="#FFBC5E"/>
+    </linearGradient>
+    <linearGradient id="circuit_linear" x1="18" y1="10" x2="28" y2="16" gradientUnits="userSpaceOnUse">
+      <stop offset="0.259" stop-color="#FFDB6E"/>
+      <stop offset="1" stop-color="#FFBC5E"/>
+    </linearGradient>
+  </defs>
+</svg>

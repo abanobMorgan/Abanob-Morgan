@@ -1,0 +1,44 @@
+<article class="contact" data-page="contact">
+
+    <header>
+        <h2 class="h2 article-title">Contact</h2>
+    </header>
+
+    <section class="mapbox" data-mapbox>
+        <figure>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55251.37709962986!2d31.41095544610636!3d30.02825651339842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145816c8f0cffba9%3A0x987e3c1db46430a6!2sNew%20Cairo%20City%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1707372391359!5m2!1sen!2seg"
+            width="400" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </figure>
+    </section>
+
+    <section class="contact-form">
+        <h3 class="h3 form-title">Contact Form</h3>
+
+        <form class="form" id="contactForm" data-form>
+        <div class="input-wrapper">
+            <input type="text" name="fullName" class="form-input" placeholder="Full name" required data-form-input>
+            <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            <input type="tel" name="phone" class="form-input" placeholder="Phone number" required data-form-input>
+        </div>
+
+        
+            <input type="text" name="inquiryType" class="form-input" 
+            placeholder="How can I help you?" required data-form-input><br>
+        
+        <textarea name="message" class="form-input" placeholder="Additional Information" required data-form-input rows="5"></textarea>
+
+        <button class="form-btn" type="submit" data-form-btn>
+            <ion-icon name="paper-plane"></ion-icon>
+            <span>Send Message</span>
+        </button>
+        </form>
+    </section>
+
+</article>

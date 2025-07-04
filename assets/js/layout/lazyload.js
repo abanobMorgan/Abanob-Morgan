@@ -1,22 +1,25 @@
 const sections = ['about', 'blog', 'contact', 'portfolio', 'resume'];
 const loadedSections = new Set();
+
 function loadSection(section) {
   const sectionId = `${section}-content-section`;
   const container = document.getElementById(sectionId);
 
+  if (!container) {
+    console.warn(`❌ Container not found: #${sectionId}`);
+    return;
+  }
+
   // Step 1: Hide all other sections
-  const allSections = ['about', 'resume', 'portfolio', 'blog', 'contact'];
-  allSections.forEach(sec => {
+  sections.forEach(sec => {
     const el = document.getElementById(`${sec}-content-section`);
     if (el) el.style.display = 'none';
   });
 
   // Step 2: Show current section container
-  if (container) {
-    container.style.display = 'block';  // 👈 Show the section
-  }
+  container.style.display = 'block'; // ✅ Show this section
 
-  // Step 3: Load only if not already loaded
+  // Step 3: Load HTML if not already loaded
   if (!loadedSections.has(section)) {
     console.log(`Loading section: ${section}`);
     fetch(`./webpage/${section}.html`)
@@ -26,21 +29,31 @@ function loadSection(section) {
       })
       .then(html => {
         container.innerHTML = html;
+
+        // ✅ Inject .active into the loaded <article> element
+        const article = container.querySelector('article');
+        if (article && article.dataset.page === section) {
+          article.classList.add('active');
+        }
+
         loadedSections.add(section);
-        console.log(`Loaded content into #${sectionId}`);
+        console.log(`✅ Loaded and activated #${sectionId}`);
       })
       .catch(error => {
         console.error(`Error loading section ${section}:`, error);
       });
+  } else {
+    // ✅ Ensure the article is visible (re-activate if previously hidden)
+    const article = container.querySelector('article');
+    if (article) article.classList.add('active');
   }
 }
 
+// Initial load
+console.log('DOM fully loaded and parsed');
+loadSection('about');
 
-document.addEventListener('DOMContentLoaded', function () {
-  console.log('DOM fully loaded and parsed');
-  loadSection('about'); // Load default section
-});
-
+// Handle navbar clicks
 document.querySelectorAll('.navbar-link').forEach(btn => {
   btn.addEventListener('click', function () {
     document.querySelectorAll('.navbar-link').forEach(b => b.classList.remove('active'));

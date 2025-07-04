@@ -21,10 +21,8 @@ function loadSection(section) {
 
   // Step 3: Load HTML if not already loaded
   if (!loadedSections.has(section)) {
-    console.log(`Loading section: ${section}`);
     fetch(`./webpage/${section}.html`)
       .then(response => {
-        console.log(`Fetched ./webpage/${section}.html, status: ${response.status}`);
         return response.text();
       })
       .then(html => {
@@ -35,9 +33,7 @@ function loadSection(section) {
         if (article && article.dataset.page === section) {
           article.classList.add('active');
         }
-
         loadedSections.add(section);
-        console.log(`✅ Loaded and activated #${sectionId}`);
       })
       .catch(error => {
         console.error(`Error loading section ${section}:`, error);
@@ -50,7 +46,6 @@ function loadSection(section) {
 }
 
 // Initial load
-console.log('DOM fully loaded and parsed');
 loadSection('about');
 
 // Handle navbar clicks
@@ -60,7 +55,6 @@ document.querySelectorAll('.navbar-link').forEach(btn => {
     this.classList.add('active');
 
     const section = this.getAttribute('data-section');
-    console.log(`Navbar clicked: ${section}`);
     loadSection(section);
   });
 });

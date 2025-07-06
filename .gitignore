@@ -5,8 +5,8 @@ __pycache__/
 # C extensions
 *.so
 .vscode
-*.pdf
 .env
+*.pdf
 # Distribution / packaging
 .Python
 build/

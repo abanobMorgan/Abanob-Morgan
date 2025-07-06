@@ -98,7 +98,7 @@ cp .env.example .env
 3. Update EmailJS configuration in `assets/js/env.js`:
 ```javascript
 const config = {
-    EMAILJS_PUBLIC_KEY: 'your_public_key',
+    EMAILJS_PUBLIC_KEY: 'PUBLIC_KEY',
     EMAILJS_SERVICE_ID: 'your_service_id',
     EMAILJS_TEMPLATE_ID: 'your_template_id'
 };

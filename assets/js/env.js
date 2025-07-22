@@ -1,5 +1,9 @@
-const config = {
-    EMAILJS_PUBLIC_KEY: 'your_emailjs_public_key',
-    EMAILJS_SERVICE_ID: 'your_emailjs_service_id',
-    EMAILJS_TEMPLATE_ID: 'your_emailjs_template_id'
+window.APP_ENV = {
+  EMAILJS_SERVICE_ID: "service_7l67opr",
+  EMAILJS_TEMPLATE_ID: "template_cmf8xs9",
+  EMAILJS_PUBLIC_KEY: "S0qoUxe9vSAYDR0HX",
+  // Uncomment and set your EmailJS user ID if needed
+  // EMAILJS_USER_ID: "EMAILJS_PUBLIC_KEY",
+  // EMAILJS_SERVICE_ID: "EMAILJS_SERVICE_ID",
+  // EMAILJS_TEMPLATE_ID: "EMAILJS_TEMPLATE_ID"
 };

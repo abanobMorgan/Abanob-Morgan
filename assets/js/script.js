@@ -35,8 +35,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  modalCloseBtn?.addEventListener("click", testimonialsModalFunc);
-  overlay?.addEventListener("click", testimonialsModalFunc);
+
+// add click event to modal close button
+modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+overlay.addEventListener("click", testimonialsModalFunc);
 
   // ===== Custom Select Filter =====
   const select = document.querySelector("[data-select]");
@@ -180,3 +182,4 @@ document.addEventListener("DOMContentLoaded", function () {
   `;
   document.head.appendChild(style);
 });
+

@@ -1,5 +1,4 @@
 console.warn("⚠️ loading contact.js");
-console.log(window.APP_ENV);
 
 (function () {
   const {
